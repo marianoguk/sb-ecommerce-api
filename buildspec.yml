@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Building project...
+      - cd ecommerce
+      - mvn clean package
+  post_build:
+    commands:
+      - echo Build completed successfully
+artifacts:
+  files:
+    - target/ecommerce-api.jar
+  discard-paths: yes
