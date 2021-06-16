@@ -4,7 +4,6 @@ phases:
   build:
     commands:
       - echo Building project...
-      - cd ecommerce
       - mvn clean package
   post_build:
     commands:
